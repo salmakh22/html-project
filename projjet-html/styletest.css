@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+  }
+.nav-bar{
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  position: fixed;
+}
+.logo{
+  width:90px;
+  height: 90px;
+  float:left;
+  left: 0p;
+ }
+ul{
+ list-style: none;
+ margin-top: 2%;
+float: right;
+} 
+li{
+  display: inline-block;
+  
+}
+a{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    font-size: 1.5em;
+    margin-right: 15px;
+   }
+
+.home {
+    width: 1525px;
+    height: 725px;
+    background-image: url('essaouira.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+    margin-bottom: -300px;
+    color:white;
+    text-align: center;
+}
+.button {
+  background:none;
+ border: border;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration:none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  transition-duration: 0.5s;
+  
+}
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 5px 5px 5px rgba(0, 0, 0, 0.19);
+  background-color:aliceblue;
+  text-decoration: none;
+  
+}
+.aboutlogo{
+  width: 150px;
+  height: 150px;
+  margin-top: -0px;
+}
+
+.about {
+  padding: 100px;
+  margin-top: 300px;
+  height:max-content;
+  
+  justify-content: space-between;
+
+}
+
+.paragraph{
+  text-align: left;
+  width: 850px;
+  margin-left: 400px;
+  margin-top: -150px;
+}
+.destinations {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.destinations h1 {
+  text-align: center;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.gallery {
+  width: calc(33.33% - 10px); /* Chaque destination prendra environ 33.33% de la largeur avec une marge de 5px */
+  margin: 5px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.gallery:hover {
+  border: 1px solid #777;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.desc {
+  padding: 15px;
+}
+.services{
+  margin-right: 7%;
+  height: 170px;
+  margin-top: 100px;
+}
+.services h2{
+  text-align: center;
+}
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px auto;
+  list-style-type: none; /* Supprimer les puces de la liste */
+  padding: 0; /* Supprimer le remplissage par défaut de la liste */
+  margin-left: 15px;
+ 
+  
+}
+
+.services-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  background-color: #fff;
+ 
+}
+
+.services-list li img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  
+}
+
+.services-list li p {
+  margin: 0;
+  padding: 0;
+  text-align: center; /* Centrer le texte */
+}
+footer{
+  background: rgb(118, 80, 118);
+  padding-top: 50px;
+  height: 500px;
+  margin-top: 200px;
+}
+.container{
+  width: 1140px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.footer-content{
+  width: 33.3%;
+}
+h3{
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.footer-content p{
+  width:190px;
+  margin: auto;
+  padding: 7px;
+  font-size: larger;
+}
+.footer-content ul{
+  text-align: center;
+}
+
+
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: #a25fab;
+}
+
+.bottom-bar{
+  
+  
+  padding: 10px 0;
+  margin-top: 300px;
+  margin-right: 300px;
+
+ 
+}
+.bottom-bar p{
+  color: #161414;
+  margin: 0;
+  font-size: 16px;
+  padding: 7px;
+  
+}
+
+.example-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.example-2 .icon-content {
+  margin: 0 10px;
+  position: relative;
+}
+.example-2 .icon-content .tooltip {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+.example-2 .icon-content:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  top: -50px;
+}
+.example-2 .icon-content a {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #4d4d4d;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.example-2 .icon-content a:hover {
+  box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+}
+.example-2 .icon-content a svg {
+  position: relative;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+}
+.example-2 .icon-content a:hover {
+  color: white;
+}
+.example-2 .icon-content a .filled {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+}
+.example-2 .icon-content a:hover .filled {
+  height: 100%;
+}
+
+.example-2 .icon-content a[data-social="linkedin"] .filled,
+.example-2 .icon-content a[data-social="linkedin"] ~ .tooltip {
+  background-color: #0274b3;
+}
+
+.example-2 .icon-content a[data-social="github"] .filled,
+.example-2 .icon-content a[data-social="github"] ~ .tooltip {
+  background-color: #24262a;
+}
+.example-2 .icon-content a[data-social="instagram"] .filled,
+.example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5b51db,
+    #b33ab4,
+    #c135b4,
+    #e1306c,
+    #fd1f1f
+  );
+}
+.example-2 .icon-content a[data-social="youtube"] .filled,
+.example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
+  background-color: #ff0000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn { 
+  display: inline-block;
+  padding: 15px 32px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #442f46;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 9px #999;
+}
+
+.btn:hover {background-color: #4e2c4b}
+
+.btn:active {
+  background-color: #4e2c4b;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
